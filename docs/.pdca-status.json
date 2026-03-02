@@ -1,0 +1,359 @@
+{
+  "version": "2.0",
+  "lastUpdated": "2026-03-02T10:27:49.877Z",
+  "activeFeatures": [
+    "Amirang"
+  ],
+  "primaryFeature": "Amirang",
+  "features": {
+    "Amirang": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-03-02T06:22:29.363Z",
+        "lastUpdated": "2026-03-02T10:27:49.877Z"
+      },
+      "lastFile": "/Users/sungminbang/Dev/Amirang/src/App.jsx"
+    }
+  },
+  "pipeline": {
+    "currentPhase": 1,
+    "level": "Dynamic",
+    "phaseHistory": []
+  },
+  "session": {
+    "startedAt": "2026-03-02T04:34:08.293Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-03-02T10:27:49.877Z"
+  },
+  "history": [
+    {
+      "timestamp": "2026-03-02T06:22:29.364Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T06:22:39.423Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:33:10.538Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:33:11.894Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:33:13.142Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:33:15.207Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:38:27.195Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:38:36.188Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:52:42.167Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:55:59.557Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:56:11.405Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:56:22.771Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:56:30.766Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T08:56:39.650Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:26:59.959Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:27:09.963Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:35:48.759Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:35:54.190Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:35:58.655Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:36:03.238Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:36:08.088Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:37:48.485Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:37:49.295Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:37:50.174Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:37:50.995Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:47:30.979Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:47:34.535Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:47:40.392Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:47:45.357Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:47:54.611Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:47:58.958Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:48:09.474Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:48:27.650Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:48:32.092Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:48:35.852Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:48:39.579Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:48:48.046Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T09:48:52.886Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:05:22.820Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:05:53.695Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:06:18.363Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:08:12.641Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:10:21.482Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:10:33.235Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:10:38.827Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:12:00.083Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:12:17.909Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:12:31.809Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:12:39.709Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:14:41.332Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:20:05.575Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:20:57.641Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:22:27.486Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-03-02T10:27:49.877Z",
+      "feature": "Amirang",
+      "phase": "do",
+      "action": "updated"
+    }
+  ]
+}
