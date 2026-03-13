@@ -43,7 +43,7 @@ const statusCfg = {
   consulting: { label: "상담 진행중", color: D.amber, bg: "#FBBF2422" },
   ai_pending: { label: "AI 분석 대기", color: D.textMuted, bg: "#47556922" },
   ai_done: { label: "분석 완료", color: D.teal, bg: "#34D39922" },
-  confirmed: { label: "원장 컨펌", color: D.green, bg: "#34D39922" },
+  confirmed: { label: "원장님 컨펌", color: D.green, bg: "#34D39922" },
   in_treatment: { label: "치료 진행중", color: D.purple, bg: "#A78BFA22" },
 };
 
@@ -58,12 +58,12 @@ const patients = [
   { id: "P-008", name: "송미영", age: 55, cancer: "췌장암 2기", status: "ai_done", date: "2025.03.13", branch: "강남점", phone: "010-8901-2345", consult: "항암 1차 완료. 부작용으로 체중 감소 심함. 영양 치료 병행 필수.", files: ["CT결과.pdf", "영양상태평가.pdf"] },
 ];
 
-// 오늘 일정 (원장용)
+// 오늘 일정 (원장님용)
 const todaySchedule = [
   { time: "09:00", patient: "박지호", type: "면역강화 프로그램", room: "1번 치료실", status: "done" },
   { time: "10:00", patient: "최유진", type: "비타민C 치료", room: "2번 치료실", status: "done" },
   { time: "11:00", patient: "김민준", type: "초진 상담", room: "상담실", status: "current" },
-  { time: "14:00", patient: "윤재석", type: "AI 분석 검토", room: "원장실", status: "upcoming" },
+  { time: "14:00", patient: "윤재석", type: "AI 분석 검토", room: "원장님실", status: "upcoming" },
   { time: "15:00", patient: "송미영", type: "치료 계획 상담", room: "상담실", status: "upcoming" },
   { time: "16:30", patient: "한소희", type: "초진 상담", room: "상담실", status: "upcoming" },
 ];
@@ -279,7 +279,7 @@ function PatientForm({ onBack, onDashboard }) {
         <p style={{ fontSize: 15, color: D.textDim, lineHeight: 1.8, marginBottom: 32 }}>접수번호 <strong style={{ color: D.teal }}>P-2406</strong>으로 등록되었습니다.<br />담당 상담사가 영업일 기준 1일 이내 연락드립니다.</p>
         <div style={{ background: D.surface, border: `1px solid ${D.border}`, borderRadius: 12, padding: 24, marginBottom: 32, textAlign: "left" }}>
           <div style={{ fontSize: 13, fontWeight: 600, color: D.textMuted, marginBottom: 16 }}>진행 단계</div>
-          {["✅ 온라인 접수 완료", "⏳ 상담사 배정 중", "○ 검사 분석", "○ 원장 확인", "○ 치료 프로그램 안내"].map((s, i) => (
+          {["✅ 온라인 접수 완료", "⏳ 상담사 배정 중", "○ 검사 분석", "○ 원장님 확인", "○ 치료 프로그램 안내"].map((s, i) => (
             <div key={i} style={{ padding: "10px 0", borderBottom: i < 4 ? `1px solid ${D.border}` : "none", fontSize: 14, color: i === 0 ? D.teal : i === 1 ? D.amber : D.textMuted }}>{s}</div>
           ))}
         </div>
@@ -532,7 +532,7 @@ function PatientDashboard({ onLogout }) {
     { label: "접수", status: "done" },
     { label: "상담", status: "done" },
     { label: "검사분석", status: "done" },
-    { label: "원장검토", status: "current" },
+    { label: "원장님검토", status: "current" },
     { label: "치료시작", status: "pending" },
   ];
 
@@ -541,7 +541,7 @@ function PatientDashboard({ onLogout }) {
     { date: "2026.03.03", event: "상담사 배정 - 박미영", icon: "👤" },
     { date: "2026.03.04", event: "초기 상담 완료", icon: "💬" },
     { date: "2026.03.05", event: "검사 분석 완료", icon: "📋" },
-    { date: "2026.03.06", event: "원장 검토 진행중", icon: "🩺" },
+    { date: "2026.03.06", event: "원장님 검토 진행중", icon: "🩺" },
   ];
 
   const documents = [
@@ -1017,7 +1017,7 @@ function DemoStart({ onLogin, onApply }) {
     { icon: "👤", title: "환자 접수", desc: "온라인 문진표 작성\n진료기록 업로드" },
     { icon: "💬", title: "영업 상담", desc: "1차 상담 진행\nCRM 기록, AI 분석 요청" },
     { icon: "🤖", title: "AI 분석", desc: "진료기록 + 의료지식 종합\n치료 프로그램 제안" },
-    { icon: "🩺", title: "원장 컨펌", desc: "AI 리포트 검토\n프로그램 선택, 최종 승인" },
+    { icon: "🩺", title: "원장님 컨펌", desc: "AI 리포트 검토\n프로그램 선택, 최종 승인" },
     { icon: "💉", title: "간호 치료", desc: "스케줄 관리\n세션 기록, 특이사항 보고" },
   ];
 
@@ -1033,13 +1033,13 @@ function DemoStart({ onLogin, onApply }) {
       btnLabel: "체험하기 →",
     },
     {
-      id: "director", icon: "🩺", label: "원장", color: D.teal,
+      id: "director", icon: "🩺", label: "원장님", color: D.teal,
       features: ["AI 분석 리포트 검토", "유사 케이스 & 참조 근거 확인", "치료 프로그램 선택", "최종 컨펌 & 간호팀 전달"],
       btnLabel: "체험하기 →",
     },
     {
       id: "nurse", icon: "💉", label: "간호사", color: D.purple,
-      features: ["원장 지시사항 확인", "치료 스케줄 관리", "세션 완료 기록", "특이사항 보고"],
+      features: ["원장님 지시사항 확인", "치료 스케줄 관리", "세션 완료 기록", "특이사항 보고"],
       btnLabel: "체험하기 →",
     },
   ];
@@ -1231,7 +1231,7 @@ function DemoStart({ onLogin, onApply }) {
           <div>
             <div style={{ fontSize: 15, fontWeight: 700, color: D.purple, marginBottom: 8 }}>학습하는 AI</div>
             <p style={{ fontSize: 14, color: D.textDim, lineHeight: 1.8, margin: 0 }}>
-              원장이 수정하고 보완할수록, AI는 계속 똑똑해집니다. 전문의의 판단 노하우가 시스템에 축적되어,{" "}
+              원장님이 수정하고 보완할수록, AI는 계속 똑똑해집니다. 전문의의 판단 노하우가 시스템에 축적되어,{" "}
               <strong style={{ color: D.purple }}>브랜치 전체의 진료 품질이 함께 높아집니다.</strong>
             </p>
           </div>
@@ -1451,7 +1451,7 @@ function SalesDashboard() {
                 <option value="consulting">상담 진행중</option>
                 <option value="ai_pending">AI 분석 대기</option>
                 <option value="ai_done">분석 완료</option>
-                <option value="confirmed">원장 컨펌</option>
+                <option value="confirmed">원장님 컨펌</option>
                 <option value="in_treatment">치료 진행중</option>
               </select>
               {!aiSent ? (
@@ -1560,7 +1560,7 @@ function SalesDashboard() {
 /* ─── AI THINK ANIMATION ─────────────────────────────────────────── */
 function AIThink({ onDone }) {
   const [step, setStep] = useState(0);
-  const steps = ["환자 문진 데이터 파싱...", "과거 진료기록 벡터 임베딩 분석...", "RAG DB 유사 케이스 23건 검색...", "의학 문헌 17편 참조...", "프로그램 적합도 스코어링...", "원장 판단 로직 적용...", "최종 리포트 생성 완료 ✓"];
+  const steps = ["환자 문진 데이터 파싱...", "과거 진료기록 벡터 임베딩 분석...", "RAG DB 유사 케이스 23건 검색...", "의학 문헌 17편 참조...", "프로그램 적합도 스코어링...", "원장님 판단 로직 적용...", "최종 리포트 생성 완료 ✓"];
   useEffect(() => {
     const iv = setInterval(() => setStep(s => { if (s >= steps.length - 1) { clearInterval(iv); setTimeout(onDone, 600); return s; } return s + 1; }), 650);
     return () => clearInterval(iv);
@@ -1829,7 +1829,7 @@ function DirectorDashboard() {
                 {/* Program Selection */}
                 <DCard>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
-                    <div style={{ fontSize: 12, color: D.textMuted, fontWeight: 700 }}>치료 프로그램 선택 <span style={{ color: D.amber }}>*원장 직접 선택</span></div>
+                    <div style={{ fontSize: 12, color: D.textMuted, fontWeight: 700 }}>치료 프로그램 선택 <span style={{ color: D.amber }}>*원장님 직접 선택</span></div>
                     <span style={{ fontSize: 12, color: D.teal }}>{selectedProgs.length}개 선택됨</span>
                   </div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
@@ -1850,7 +1850,7 @@ function DirectorDashboard() {
 
                 {/* Director Note */}
                 <DCard>
-                  <div style={{ fontSize: 12, color: D.textMuted, fontWeight: 700, marginBottom: 10 }}>원장 지시사항</div>
+                  <div style={{ fontSize: 12, color: D.textMuted, fontWeight: 700, marginBottom: 10 }}>원장님 지시사항</div>
                   <textarea rows={3} value={note} onChange={e => phase !== "done" && setNote(e.target.value)} placeholder="간호팀에게 전달할 특이사항, 주의사항을 입력하세요..." disabled={phase === "done"} style={{ width: "100%", background: D.surfaceHigh, border: `1px solid ${D.border}`, borderRadius: 8, padding: "10px 14px", color: D.text, fontSize: 13, fontFamily: "inherit", resize: "none", outline: "none", boxSizing: "border-box", opacity: phase === "done" ? 0.7 : 1 }} />
                 </DCard>
 
@@ -1943,7 +1943,7 @@ function NurseDashboard() {
         {selSchedule ? (
           <>
             <div style={{ fontSize: 15, fontWeight: 800, color: D.text, marginBottom: 4 }}>{selSchedule.patient} 치료 지시서</div>
-            <div style={{ fontSize: 12, color: D.textMuted, marginBottom: 20 }}>이재원 원장 컨펌 · {selSchedule.date} {selSchedule.time}</div>
+            <div style={{ fontSize: 12, color: D.textMuted, marginBottom: 20 }}>이재원 원장님 컨펌 · {selSchedule.date} {selSchedule.time}</div>
 
             <DCard style={{ marginBottom: 12 }}>
               <div style={{ fontSize: 11, color: D.textMuted, fontWeight: 700, marginBottom: 10 }}>처방 프로그램</div>
@@ -1954,7 +1954,7 @@ function NurseDashboard() {
             </DCard>
 
             <DCard style={{ marginBottom: 12 }}>
-              <div style={{ fontSize: 11, color: D.textMuted, fontWeight: 700, marginBottom: 10 }}>원장 지시사항</div>
+              <div style={{ fontSize: 11, color: D.textMuted, fontWeight: 700, marginBottom: 10 }}>원장님 지시사항</div>
               <div style={{ padding: "12px 14px", background: `${D.amber}11`, border: `1px solid ${D.amber}33`, borderRadius: 8, fontSize: 13, color: D.textDim, lineHeight: 1.7 }}>
                 ⚠ 신장 기능 수치 재확인 필요. 시술 전 혈압 체크 필수. 이상 반응 시 즉시 보고.
               </div>
@@ -2001,7 +2001,7 @@ function NurseDashboard() {
 /* ─── DASHBOARD LAYOUT ───────────────────────────────────────────── */
 const roleCfg = {
   sales: { label: "영업 담당", color: D.amber, sub: "상담 CRM" },
-  director: { label: "원장", color: D.teal, sub: "AI 분석 · 컨펌" },
+  director: { label: "원장님", color: D.teal, sub: "AI 분석 · 컨펌" },
   nurse: { label: "간호사", color: D.purple, sub: "치료 기록" },
   admin: { label: "본사 관리자", color: "#F97316", sub: "관리" },
 };
